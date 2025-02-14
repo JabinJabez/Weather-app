@@ -37,9 +37,9 @@ const Weather = () => {
 
     const handleKeyDown = (e) => {
         if (e.key === 'Enter') {
-            search(city)
+            search(city);
         }
-    }
+    };
 
     const getWeatherIcon = () => {
         if (!weatherData) return null;
@@ -80,6 +80,7 @@ const Weather = () => {
             {weatherData && (
                 <div className="details">
                     {getWeatherIcon()}
+                    <p className="condition">Condition: <span>{weatherData.weather[0].main}</span></p>
                     <p className="degree">Temperature: <span>{weatherData.main.temp}° C</span></p>
                     <p className="location">Location: <span>{weatherData.name}</span></p>
                 </div>
