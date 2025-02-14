@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    width: 350px;
+    background-color: rgba(26, 65, 174, 0.9);
+    border-radius: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 12px;
+    width: 220px;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-btn {
+    background: #007bff;
+    border: none;
+    padding: 12px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #0056b3;
+}
+
+.search-icon {
+    color: white;
+    font-size: 18px;
+}
+
+.details {
+    padding-top: 20px;
+}
+
+.sun-icon, .moon-icon {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.sun-icon {
+    color: rgb(255, 234, 0);
+}
+
+.moon-icon {
+    color: rgb(180, 180, 255);
+}
+
+.degree {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.degree span {
+    font-weight: 500;
+}
+
+.location {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weather-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.col {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.col img {
+    width: 40px;
+    height: 40px;
+}
+
+.col p {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.col span {
+    font-size: 14px;
+    color: #ddd;
+}
