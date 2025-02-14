@@ -35,6 +35,12 @@ const Weather = () => {
         search(city);
     };
 
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            search(city)
+        }
+    }
+
     const getWeatherIcon = () => {
         if (!weatherData) return null;
         const condition = weatherData.weather[0].main;
@@ -62,6 +68,7 @@ const Weather = () => {
                     placeholder="Search city..."
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
+                    onKeyDown={handleKeyDown}
                 />
                 <button className="search-btn" onClick={handleSearch}>
                     <FaSearch className="search-icon" />
